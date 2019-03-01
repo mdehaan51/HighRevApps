@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: "Lato"
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -12,3 +11,125 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.background-container{
+  background-image: url("./background.png");
+  height: 486px;
+  width: 1024px;
+  border-radius: 2px;
+  border: 1px solid grey;
+  /*background-color: #FFF;*/
+}
+.foreground-container{
+	position: relative;
+}
+
+.logo-div{
+	height: 53px;
+	width:154px;
+	position: absolute;
+	left: 44px;
+	top: 38px;
+}
+
+.logo-div img{
+	height: 53px;
+	width:154px;
+}
+
+.welcome-header{
+  height: 180px;
+  width: 287px;
+  color: #373946;
+  font-family: Lato;
+  font-size: 44px;
+  font-weight: 300;
+  letter-spacing: 0.31px;
+  line-height: 53px;
+  position: absolute;
+  left: 165px;
+  top: 161px;
+}
+
+.welcome-color-text{
+  color: #EC2F91;
+}
+
+.login-form{
+  height: 154px;
+  width: 238px;
+  position: absolute;
+  top: 176px;
+  right: 175px;
+  margin-top: -30px;
+}
+
+.form-input-container{
+	height: 38px;
+	width: 238px;
+	background: none;
+	position: relative;
+	margin-top: 20px;
+	border-bottom: 1px solid #373946;
+}
+.form-input-container:focus-within{
+	border-bottom: 1px solid #DD137B;
+}
+.form-icon{
+	position: absolute;
+	top: 9px;
+	left: 1px;
+}
+
+.form-input{
+	background: none;
+    border: none;
+    position: absolute;
+    left: 38px;
+    bottom: 6px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1px;
+    color: #373946;
+}
+
+.form-input::placeholder{
+	color:#373946;
+}
+.form-input:focus::placeholder{
+	color: #8A8D9A;
+}
+
+.form-input:focus{
+	outline: none;
+}
+
+.high-rev-button{
+position: relative;
+    top: 46px;
+    float: right;
+    right: 0px;
+    height: 40px;
+    width: 156px;
+    border-radius: 100px;
+    background: -webkit-linear-gradient(313.36deg, #EC2F91 0%, #DD137B 100%);
+    background: linear-gradient(136.64deg, #EC2F91 0%, #DD137B 100%);
+    box-shadow: 0 6px 22px 0 rgba(166,27,99,0.16);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    line-height: 17px;
+    border: none;
+    cursor: pointer;
+}
+.high-rev-button:disabled,
+.high-rev-button[disabled]{
+	background: grey;
+	color: lightgrey;
+}
+
+
+
+
